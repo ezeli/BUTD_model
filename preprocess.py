@@ -81,6 +81,7 @@ if __name__ == '__main__':
     parser.add_argument('--out_annotation', type=str, default='./data/captions/annotation.json')
 
     opt = parser.parse_args()
+    opt.device = torch.device('cuda:0') if torch.cuda.is_available() else torch.device('cpu')
 
     extract_imgs_feat()
     process_coco_captions()
