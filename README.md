@@ -43,6 +43,8 @@ This project is not limited to the MSCOCO dataset, but you need to process your 
 
 ## Result
 ### Evaluation metrics
+Evaluation tool: [ezeli/caption_eval](https://github.com/ezeli/caption_eval)
+
 *XE* represents Cross-Entropy loss, and *+SCST* means using reinforcement learning to fine-tune the model (using CIDEr reward).
 
 |features|training|Bleu-1|Bleu-2|Bleu-3|Bleu-4|METEOR|ROUGE_L|CIDEr|SPICE|
